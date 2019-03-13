@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>EMR Spark Demo</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				 <section>
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="https://aws.amazon.com/blogs/big-data/build-a-concurrent-data-orchestration-pipeline-using-amazon-emr-and-apache-livy/" data-preview-link>Spark EMR Data pipeline</a></li>
+                        <li><a href="https://spark.apache.org/docs/latest/" data-preview-link>Spark API Documentation</a></li>
+                        <li><a href="https://github.com/clarifyhealth/emrcli" data-preview-link>EMR Cli Tool</a></li>
+                        <li><a href="https://github.com/clarifyhealth/spark_ml" data-preview-link>THA Claim Header Pipeline Code</a></li>
+                    </ul>
+                </section>
+				<section>
+                    <h4>EMR Workflow</h4>
+                    <img src="images/EMR-Workflow.png">
+                </section>
+                <section>
+                    <h4>Pipeline Flow</h4>
+                    <img src="images/Pipeline-Flow.png">
+                </section>
+                
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
